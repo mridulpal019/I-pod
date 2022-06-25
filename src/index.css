@@ -11,3 +11,78 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.pod-box{
+  background-color:#817e7e66;
+  border-radius: 15px;
+  height:75vh;
+  width: 25vw;
+  margin-top: 15vh;
+  margin-left: 35vw;
+  position: relative;
+}
+
+
+.pod-box .pod-display{
+  position: absolute;
+  width:90%;
+  top: 3%;
+  left: 4.5%;
+  height: 45%;
+  border-radius: 8px;
+  background-color: rgb(226, 190, 190);
+  border: solid black 2px ;
+}
+
+.pod-box .pod-controller{
+  margin-top: 5%;
+  height: 40%;
+  width: 70%;
+  margin-right: 10%;
+  background-color: rgb(247, 247, 247);
+  top: 50%;
+  left: 15%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.pod-box .pod-controller #Menu{
+  height:23%;
+  margin-top:10% ;
+  text-align: center;
+
+  color: #817e7e66;
+}
+
+.controller-mid i{
+  display: inline-block;
+  color: #817e7e66;
+ 
+}
+.controller-mid{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 33%;
+  justify-content: space-evenly;
+ 
+}
+
+.pod-box .pod-controller .controller-mid .enter{
+  width:33%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #817e7e66;
+  
+}
+
+.pod-box .pod-controller .play-pause{
+  margin-top: 8%;
+  color: #817e7e66;
+
+}
+
+.pod-box{
+  -webkit-box-reflect: below;
+  opacity: .8;
+}
