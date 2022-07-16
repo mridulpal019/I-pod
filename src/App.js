@@ -1,16 +1,31 @@
-
 import './App.css';
 
+import Home from './pages/Home';
+import Controller from './pages/Controller';
+import Paths from './config/Paths';
+import { BrowserRouter, Router } from 'react-router-dom';
+
+
 function App() {
+
+  // var touchArea = document.getElementById('controller');
+  // const myRegion = new ZingTouch.Region(touchArea);
+
+  // myRegion.bind(touchArea, 'rotate', function(e){
+	//    console.log(e.detail);
+  //  });
+
   return (
     <div className="App">
        <div className='pod-box'>
-        <div className='pod-display'></div>
-        <div className='pod-controller'>
-          <div id='Menu'>Menu</div>
-          <div className='controller-mid' > <i class="fa-solid fa-backward-fast"></i> <div id='enter' className='enter'></div>  <i className="fas fa-forward-fast"></i></div>
-          <div className='play-pause'><i class="fas fa-play"></i> <i class="fas fa-regular fa-pause"></i></div>
-        </div>
+       <BrowserRouter>
+       <div className='pod-display'> 
+       <Paths/>
+       </div>
+       <Controller/>
+      </BrowserRouter>
+          {/* <Home/> */}
+        
        </div>
     </div>
   );

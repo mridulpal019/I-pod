@@ -32,6 +32,7 @@ code {
   border-radius: 8px;
   background-color: rgb(226, 190, 190);
   border: solid black 2px ;
+  background-image: url('./assets/images/home_display.jpg');
 }
 
 .pod-box .pod-controller{
@@ -84,5 +85,66 @@ code {
 
 .pod-box{
   -webkit-box-reflect: below;
-  opacity: .8;
+  opacity: 1;
 }
+
+.pod-box .pod-display .list{
+  background-color: aliceblue;
+  width:50%;
+  height: 100%;
+  padding-top: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+}
+
+.pod-box .pod-display .list h3{
+  margin-block-start: 0;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.pod-display .list h5:hover{
+  background-color: rgb(127, 202, 255);
+  color: white;
+}
+
+
+.pod-display .list span{
+  color: white;
+  margin-left: 40px;
+} 
+
+.pod-display .list h5{
+  /* height: 12%; */
+  padding: 7%;
+  margin: 7%;
+}
+/*----------------------------------- games---------------------------------- */
+.games{
+  background-color: rgb(129, 120, 120);
+  height: 100%;
+  border-radius: 7px;
+}
+
+.games img{
+  margin-top: 50px;
+  height: 150px;
+  width: 150px;
+}
+
+
+/*------------------------------- settings------------------------------------ */
+.settings{
+  background-color: white;
+  height: 100%;
+
+}
+.settings img{
+  margin-top: 50px;
+  height: 150px;
+  width: 150px;
+}
+
