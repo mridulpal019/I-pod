@@ -15,8 +15,8 @@ code {
 .pod-box{
   background-color:#817e7e66;
   border-radius: 37px;
-  height:525px;
-  width: 320px;
+  height:75vh;
+  width: 25vw;
   margin-top: 15vh;
   margin-left: 35vw;
   position: relative;
@@ -37,8 +37,8 @@ code {
 
 .pod-box .pod-controller{
   margin-top: 5%;
-  height: 30vh;
-  width: 30vh;
+  height: 40%;
+  width: 70%;
   margin-right: 10%;
   background-color: rgb(247, 247, 247);
   top: 50%;
@@ -106,7 +106,7 @@ code {
     margin-inline-end: 0px;
 }
 
-.pod-display .list h5:hover{
+.pod-display .list .active{
   background-color: rgb(127, 202, 255);
   color: white;
 }
