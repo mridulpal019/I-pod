@@ -11,80 +11,77 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.main-container{
+margin-top: 90px;
+}
+
 
 .pod-box{
   background-color:#817e7e66;
-  border-radius: 15px;
-  height:75vh;
-  width: 25vw;
-  margin-top: 15vh;
-  margin-left: 35vw;
+  border-radius: 76px;
+  height:78vh;
   position: relative;
+  border: 1px solid transparent;
+  box-shadow:inset 0 0 40px #4e4c4c;
 }
 
 
-.pod-box .pod-display{
-  position: absolute;
-  width:90%;
-  top: 3%;
-  left: 4.5%;
-  height: 45%;
+ .pod-box .pod-display{
+  position: relative;
+  width:95%;
+  height: 43%;
   border-radius: 8px;
   background-color: rgb(226, 190, 190);
-  border: solid black 2px ;
+  border: solid black 3px ;
   background-image: url('./assets/images/home_display.jpg');
+  background-size: cover;
 }
 
 .pod-box .pod-controller{
-  margin-top: 5%;
+  width: 68%;
   height: 40%;
-  width: 70%;
-  margin-right: 10%;
   background-color: rgb(247, 247, 247);
-  top: 50%;
-  left: 15%;
   border-radius: 50%;
-  position: absolute;
+  position: relative;
 }
 
 .pod-box .pod-controller #Menu{
-  height:23%;
-  margin-top:10% ;
-  text-align: center;
-
   color: #817e7e66;
+  font-size: 1.5rem;
+}
+.pod-box .pod-controller #Menu h3{
+  font-weight: 700;
 }
 
 .controller-mid i{
   display: inline-block;
   color: #817e7e66;
- 
-}
-.controller-mid{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  height: 33%;
-  justify-content: space-evenly;
+  font-size: 1.5rem;
  
 }
 
+.pod-box .pod-controller .play-pause{
+  color: #817e7e66;
+  font-size: 1.5rem;
+
+}
 .pod-box .pod-controller .controller-mid .enter{
-  width:33%;
-  height: 100%;
+  width:90px;
+  height: 90px;
   border-radius: 50%;
   background-color: #817e7e66;
   
 }
 
-.pod-box .pod-controller .play-pause{
-  margin-top: 8%;
-  color: #817e7e66;
-
+.controller-mid{
+position: relative;
+bottom: 8px;
 }
 
+
+
 .pod-box{
-  -webkit-box-reflect: below;
+  -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.5));
   opacity: 1;
 }
 
@@ -93,11 +90,13 @@ code {
   width:50%;
   height: 100%;
   padding-top: 0;
-  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-
+  border-radius:8px ;
+  padding-left: 20px;
 }
+
+/* 
 
 .pod-box .pod-display .list h3{
   margin-block-start: 0;
@@ -118,12 +117,11 @@ code {
 } 
 
 .pod-display .list h5{
-  /* height: 12%; */
   padding: 7%;
   margin: 7%;
-}
+} */
 /*----------------------------------- games---------------------------------- */
-.games{
+/* .games{
   background-color: rgb(129, 120, 120);
   height: 100%;
   border-radius: 7px;
@@ -133,11 +131,11 @@ code {
   margin-top: 50px;
   height: 150px;
   width: 150px;
-}
+} */
 
 
 /*------------------------------- settings------------------------------------ */
-.settings{
+/* .settings{
   background-color: white;
   height: 100%;
 
@@ -146,5 +144,5 @@ code {
   margin-top: 50px;
   height: 150px;
   width: 150px;
-}
+} */
 

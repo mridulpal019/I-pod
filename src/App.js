@@ -1,33 +1,31 @@
-import './App.css';
-
-import Home from './pages/Home';
-import Controller from './pages/Controller';
-import Paths from './config/Paths';
-import { BrowserRouter, Router } from 'react-router-dom';
-
+import "./App.css";
+import Controller from "./pages/Controller";
+import Paths from "./config/Paths";
+import { BrowserRouter } from "react-router-dom";
+import { Container, Col } from "react-bootstrap";
 
 function App() {
-
   // var touchArea = document.getElementById('controller');
   // const myRegion = new ZingTouch.Region(touchArea);
 
   // myRegion.bind(touchArea, 'rotate', function(e){
-	//    console.log(e.detail);
+  //    console.log(e.detail);
   //  });
 
   return (
-    <div className="App">
-       <div className='pod-box'>
-       <BrowserRouter>
-       <div className='pod-display'> 
-       <Paths/>
-       </div>
-       <Controller/>
-      </BrowserRouter>
+    <>
+      <Container className="py-3 px-5 main-container">
+        <Col className="pod-box mx-auto mt-5" lg="4" xl="4" md="5">
+          <BrowserRouter>
+              <Col className="pod-display mx-auto mt-5">
+                <Paths />
+              </Col>
+              <Controller />
+          </BrowserRouter>
           {/* <Home/> */}
-        
-       </div>
-    </div>
+        </Col>
+      </Container>
+    </>
   );
 }
 
