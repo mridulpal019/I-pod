@@ -1,47 +1,71 @@
 import React,{useState} from "react";
 import { useNavigate } from "react-router-dom";
 import ZingTouch from 'zingtouch';
+import Song from "../assets/songs/life.mp3"
 
 
 
 const Controller=()=>{
      const navigate=useNavigate();
-  
+    //page will get the current page so that we can set activelist to chnage the options in home/music
     const page=window.location.pathname;
     var  f=15;
     var direction;
     var navigateTo;
     const List=[
       [
-       "cover-flow",
+       "coverflow",
       "music",
        "games",
        "settings"
      ],
       [
-       "all-songs",
+       "allsongs",
        "artist",
       "albums"
       ],   
     ]
+
+    // checking and setting the activelist
     if (page=="/"){
       var  activeList=List[0]
     }else if(page=="/music"){
       var activeList=List[1];
 
     }
-
+//  on click of menu the display will be redirected to Home page
     const home=(e)=>{
       e.preventDefault();
       navigate('/')
 
     }
+    // defineng variable for zingtouch
     var touchArea;
     var angle;
-    const loadto=()=>{
-     console.log(typeof(navigateTo))
+    // audio for palying in allsongs in music
+    var audio = new Audio(Song);
+    var playing;
+    const play=()=>{
+      if(playing === true){
+        audio.pause();
+        playing=false;
+      }else{
+      audio.play();
+      playing=true;
+    } 
+    }
+// on click of enter button it will first check if page is all songs if it is then audio will be played/pause
+// else it will navigate to the highlighted section
+    const loadto=(e)=>{
+      e.preventDefault();
+        if(page =="/allsongs"){
+          play();
+        }else{
+     console.log(navigateTo)
       navigate(navigateTo);
     }
+    }
+    
     const tt=()=>{
     touchArea = document.getElementById('controller');
     const myRegion = new ZingTouch.Region(touchArea);

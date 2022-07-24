@@ -6,6 +6,9 @@ import Games from '../pages/Games';
 import Music from '../pages/Music';
 import Settings from '../pages/Settings';
 import CoverFlow from '../pages/CoverFlow';
+import Allsongs from '../pages/music/Allsongs';
+import Artist from '../pages/music/Artist';
+import Albums from '../pages/music/Albums';
 
 const Paths = () => {
     return (
@@ -36,6 +39,21 @@ const Paths = () => {
                exact
                 path='/settings'
                 element={<Settings/>}
+            />
+            <Route
+               exact
+                path='/allsongs'
+                element={<Allsongs/>}
+            />
+            <Route
+               exact
+                path='/artist'
+                element={<Artist/>}
+            />
+            <Route
+               exact
+                path='/albums'
+                element={<Albums/>}
             />
          
             

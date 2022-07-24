@@ -5,8 +5,8 @@ import React,{useState} from "react";
 const CoverFlow=()=>{
     
     
-    return (<div>
-        this is coverflow
+    return (<div className="coverflow">
+     <div className="head">CoverFlow</div>
     </div>);
         
     }

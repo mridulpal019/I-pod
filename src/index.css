@@ -11,7 +11,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
+/* ----ipod outer box design */
 .pod-box{
   background-color:#817e7e66;
   border-radius: 37px;
@@ -34,7 +34,7 @@ code {
   border: solid black 2px ;
   background-image: url('./assets/images/home_display.jpg');
 }
-
+/* -------------------controlller---------------------------- */
 .pod-box .pod-controller{
   margin-top: 5%;
   height: 40%;
@@ -46,13 +46,17 @@ code {
   border-radius: 50%;
   position: absolute;
 }
-
+/*------- menu------ */
 .pod-box .pod-controller #Menu{
   height:23%;
   margin-top:10% ;
   text-align: center;
 
   color: #817e7e66;
+}
+
+#Menu a{
+  cursor: pointer;
 }
 
 .controller-mid i{
@@ -73,6 +77,8 @@ code {
   width:33%;
   height: 100%;
   border-radius: 50%;
+  cursor: pointer;
+  z-index: 1;
   background-color: #817e7e66;
   
 }
@@ -87,7 +93,7 @@ code {
   -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.5));
   opacity: 1;
 }
-
+/* ipod home list style  */
 .pod-box .pod-display .list{
   background-color: aliceblue;
   width:50%;
@@ -101,7 +107,7 @@ code {
 
 .pod-box .pod-display .list h3{
   margin-block-start: 0;
-    margin-block-end: 1em;
+    margin-block-end: 0em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
@@ -128,6 +134,9 @@ code {
   height: 100%;
   border-radius: 7px;
 }
+.games h2{
+  margin-block-start: 0;
+}
 
 .games img{
   margin-top: 20px;
@@ -137,14 +146,49 @@ code {
 
 
 /*------------------------------- settings------------------------------------ */
-.settings{
+.settings ,.coverflow{
   background-color: white;
   height: 100%;
 
 }
 .settings img{
-  margin-top: 50px;
+  margin-top: 25px;
   height: 150px;
   width: 150px;
 }
+.settings h3 {
+  margin-block-start: 0;
+}
+
+/* -----------allsongs &artist & albums---------------------- */
+.artist,.albums{
+  background-color: white;
+  height: 100%;
+}
+.allsongs{
+  background-image: url(./assets/images/music.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+  height: 100%;
+}
+/* -------------albums---------- */
+.albums{
+  background-image: url("./assets/images/album.jpg");
+  background-repeat: no-repeat;
+   background-size:cover;
+
+}
+.albums h3{
+  margin-block-start: 0;
+  color:white;
+}
+
+/* --------------------coverflow & artist----------- */
+.coverflow .head,.artist .head{
+    padding-top: 20%;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+
 
